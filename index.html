@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="pt-BR" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conquiste seu diploma reconhecido pelo MEC com 80% de desconto vitalício. Estude 100% online na UniFatecie sem largar o trabalho. Vagas limitadas!">
+    <title>Graduação EAD UniFatecie | Liberdade Acadêmica — 80% OFF Vitalício</title>
+    
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            primary: '#FF6B00',
+                            hover: '#FF8533',
+                            light: '#FFF0E6'
+                        },
+                        black: {
+                            deep: '#0A0A0A'
+                        },
+                        charcoal: '#1A1A1A',
+                        gray: {
+                            dark: '#2D2D2D',
+                            structural: '#4A4A4A',
+                            medium: '#8C8C8C',
+                            light: '#E5E5E5'
+                        },
+                        blue: {
+                            legacy: '#0066CC'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Lato', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'cinematic': '0 10px 40px rgba(0,0,0,0.15)',
+                        'glow': '0 0 30px rgba(255, 107, 0, 0.3)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(255, 107, 0, 0.4)' },
+                            '50%': { opacity: .8, boxShadow: '0 0 40px rgba(255, 107, 0, 0.8)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Noise Overlay for cinematic texture */
+        .bg-noise {
+            position: relative;
+        }
+        .bg-noise::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNuKSIgb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==');
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.4;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0A0A; }
+        ::-webkit-scrollbar-thumb { background: #4A4A4A; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF6B00; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-8{top:-2rem}.bottom-0{bottom:0px}.left-0{left:0px}.left-1\/2{left:50%}.right-0{right:0px}.right-8{right:2rem}.top-0{top:0px}.top-1\/2{top:50%}.top-8{top:2rem}.top-full{top:100%}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.-mb-20{margin-bottom:-5rem}.-ml-20{margin-left:-5rem}.-mr-20{margin-right:-5rem}.-mt-20{margin-top:-5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-3{height:0.75rem}.h-4\/5{height:80%}.h-48{height:12rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-\[150\%\]{height:150%}.h-\[800px\]{height:800px}.h-full{height:100%}.min-h-\[400px\]{min-height:400px}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-20{width:5rem}.w-3{width:0.75rem}.w-4\/5{width:80%}.w-48{width:12rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-\[150\%\]{width:150%}.w-\[800px\]{width:800px}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-\[1000px\]{max-width:1000px}.max-w-\[1200px\]{max-width:1200px}.max-w-lg{max-width:32rem}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes spin{to{transform:rotate(360deg)}}.animate-\[spin_10s_linear_infinite\]{animation:spin 10s linear infinite}@keyframes float{0%, 100%{transform:translateY(0)}50%{transform:translateY(-20px)}}.animate-float{animation:float 6s ease-in-out infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.-space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(-0.75rem * var(--tw-space-x-reverse));margin-left:calc(-0.75rem * calc(1 - var(--tw-space-x-reverse)))}.divide-x-0 > :not([hidden]) ~ :not([hidden]){--tw-divide-x-reverse:0;border-right-width:calc(0px * var(--tw-divide-x-reverse));border-left-width:calc(0px * calc(1 - var(--tw-divide-x-reverse)))}.divide-gray-structural\/50 > :not([hidden]) ~ :not([hidden]){border-color:rgb(74 74 74 / 0.5)}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-\[10px\]{border-width:10px}.border-\[20px\]{border-width:20px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-b-4{border-bottom-width:4px}.border-t-4{border-top-width:4px}.border-\[\#FF6B00\]{--tw-border-opacity:1;border-color:rgb(255 107 0 / var(--tw-border-opacity, 1))}.border-gray-structural{--tw-border-opacity:1;border-color:rgb(74 74 74 / var(--tw-border-opacity, 1))}.border-gray-structural\/0{border-color:rgb(74 74 74 / 0)}.border-gray-structural\/50{border-color:rgb(74 74 74 / 0.5)}.border-orange-primary{--tw-border-opacity:1;border-color:rgb(255 107 0 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.border-t-orange-primary{--tw-border-opacity:1;border-top-color:rgb(255 107 0 / var(--tw-border-opacity, 1))}.bg-\[\#FF6B00\]{--tw-bg-opacity:1;background-color:rgb(255 107 0 / var(--tw-bg-opacity, 1))}.bg-black-deep{--tw-bg-opacity:1;background-color:rgb(10 10 10 / var(--tw-bg-opacity, 1))}.bg-black-deep\/30{background-color:rgb(10 10 10 / 0.3)}.bg-black-deep\/80{background-color:rgb(10 10 10 / 0.8)}.bg-black-deep\/95{background-color:rgb(10 10 10 / 0.95)}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(26 26 26 / var(--tw-bg-opacity, 1))}.bg-charcoal\/50{background-color:rgb(26 26 26 / 0.5)}.bg-gray-dark{--tw-bg-opacity:1;background-color:rgb(45 45 45 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-orange-light{--tw-bg-opacity:1;background-color:rgb(255 240 230 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-\[conic-gradient\(from_90deg_at_50\%_50\%\2c \#0A0A0A_0\%\2c \#1A1A1A_50\%\2c \#FF6B00_100\%\)\]{background-image:conic-gradient(from 90deg at 50% 50%,#0A0A0A 0%,#1A1A1A 50%,#FF6B00 100%)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-l{background-image:linear-gradient(to left, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-\[\#FF6B00\]\/40{--tw-gradient-from:rgb(255 107 0 / 0.4) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 107 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-legacy{--tw-gradient-from:#0066CC var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 102 204 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-charcoal{--tw-gradient-from:#1A1A1A var(--tw-gradient-from-position);--tw-gradient-to:rgb(26 26 26 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-300{--tw-gradient-from:#d1d5db var(--tw-gradient-from-position);--tw-gradient-to:rgb(209 213 219 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-structural{--tw-gradient-from:#4A4A4A var(--tw-gradient-from-position);--tw-gradient-to:rgb(74 74 74 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-primary{--tw-gradient-from:#FF6B00 var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 107 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-primary\/10{--tw-gradient-from:rgb(255 107 0 / 0.1) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 107 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white\/10{--tw-gradient-from:rgb(255 255 255 / 0.1) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-charcoal\/80{--tw-gradient-to:rgb(26 26 26 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(26 26 26 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#CC5500\]{--tw-gradient-to:#CC5500 var(--tw-gradient-to-position)}.to-gray-500{--tw-gradient-to:#6b7280 var(--tw-gradient-to-position)}.to-gray-dark{--tw-gradient-to:#2D2D2D var(--tw-gradient-to-position)}.to-gray-light{--tw-gradient-to:#E5E5E5 var(--tw-gradient-to-position)}.to-orange-hover{--tw-gradient-to:#FF8533 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-white\/70{--tw-gradient-to:rgb(255 255 255 / 0.7) var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-16{padding-bottom:4rem}.pt-24{padding-top:6rem}.text-left{text-align:left}.text-center{text-align:center}.font-body{font-family:Lato, sans-serif}.font-heading{font-family:Montserrat, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-black-deep{--tw-text-opacity:1;color:rgb(10 10 10 / var(--tw-text-opacity, 1))}.text-gray-dark{--tw-text-opacity:1;color:rgb(45 45 45 / var(--tw-text-opacity, 1))}.text-gray-light{--tw-text-opacity:1;color:rgb(229 229 229 / var(--tw-text-opacity, 1))}.text-gray-medium{--tw-text-opacity:1;color:rgb(140 140 140 / var(--tw-text-opacity, 1))}.text-orange-primary{--tw-text-opacity:1;color:rgb(255 107 0 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-30{opacity:0.3}.shadow-\[0_-5px_20px_rgba\(255\2c 107\2c 0\2c 0\.1\)\]{--tw-shadow:0 -5px 20px rgba(255,107,0,0.1);--tw-shadow-colored:0 -5px 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(34\2c 197\2c 94\2c 0\.8\)\]{--tw-shadow:0 0 10px rgba(34,197,94,0.8);--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_20px_60px_rgba\(255\2c 107\2c 0\2c 0\.4\)\]{--tw-shadow:0 20px 60px rgba(255,107,0,0.4);--tw-shadow-colored:0 20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-cinematic{--tw-shadow:0 10px 40px rgba(0,0,0,0.15);--tw-shadow-colored:0 10px 40px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-lg{--tw-drop-shadow:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.selection\:bg-orange-primary *::selection{--tw-bg-opacity:1;background-color:rgb(255 107 0 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-orange-primary::selection{--tw-bg-opacity:1;background-color:rgb(255 107 0 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-2:hover{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-orange-primary\/50:hover{border-color:rgb(255 107 0 / 0.5)}.hover\:border-white:hover{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.hover\:bg-gray-dark:hover{--tw-bg-opacity:1;background-color:rgb(45 45 45 / var(--tw-bg-opacity, 1))}.hover\:text-orange-primary:hover{--tw-text-opacity:1;color:rgb(255 107 0 / var(--tw-text-opacity, 1))}.hover\:shadow-cinematic:hover{--tw-shadow:0 10px 40px rgba(0,0,0,0.15);--tw-shadow-colored:0 10px 40px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:translate-x-1{--tw-translate-x:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-12{--tw-rotate:12deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-orange-primary\/20{background-color:rgb(255 107 0 / 0.2)}.group:hover .group-hover\:text-orange-primary{--tw-text-opacity:1;color:rgb(255 107 0 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-14{padding:3.5rem}.md\:px-10{padding-left:2.5rem;padding-right:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:min-h-\[600px\]{min-height:600px}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:gap-20{gap:5rem}.lg\:divide-x > :not([hidden]) ~ :not([hidden]){--tw-divide-x-reverse:0;border-right-width:calc(1px * var(--tw-divide-x-reverse));border-left-width:calc(1px * calc(1 - var(--tw-divide-x-reverse)))}.lg\:border-l{border-left-width:1px}.lg\:text-7xl{font-size:4.5rem;line-height:1}}</style></head>
+<body class="font-body bg-black-deep text-white-focus antialiased selection:bg-orange-primary selection:text-white relative overflow-x-hidden" x-data="{ scrolled: false }" @scroll.window="scrolled = (window.pageYOffset &gt; 100)">
+
+    <!-- Sticky Header -->
+    <header :class="scrolled ? 'bg-black-deep/95 backdrop-blur-md shadow-cinematic py-3' : 'bg-transparent py-6'" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-gray-structural/0 bg-transparent py-6 bg-black-deep/95 backdrop-blur-md shadow-cinematic py-3" :style="scrolled ? 'border-color: rgba(74, 74, 74, 0.3)' : ''" style="">
+        <div class="max-w-[1200px] mx-auto px-5 md:px-10 flex justify-between items-center">
+            <!-- Logo Placeholder -->
+            <a href="#" class="flex items-center gap-2 group relative z-10" aria-label="Página Inicial UniFatecie">
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-primary to-orange-hover rounded flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                </div>
+                <span class="font-heading font-bold text-xl tracking-tight text-white group-hover:text-orange-primary transition-colors">UniFatecie</span>
+            </a>
+
+            <!-- Desktop Nav & CTA -->
+            <div class="hidden md:flex items-center gap-8 z-10">
+                <nav class="flex gap-6 text-sm font-semibold text-gray-light">
+                    <a href="#beneficios" class="hover:text-orange-primary transition-colors">Benefícios</a>
+                    <a href="#depoimentos" class="hover:text-orange-primary transition-colors">Histórias</a>
+                    <a href="#faq" class="hover:text-orange-primary transition-colors">Dúvidas</a>
+                </nav>
+                <a href="#matricula" class="px-6 py-3 bg-black-deep hover:bg-gray-dark text-white font-heading font-bold text-sm tracking-wide uppercase rounded shadow-cinematic transform hover:-translate-y-0.5 transition-all duration-300">
+                    Garantir Bolsa
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Alpine) -->
+            <div class="md:hidden z-10" x-data="{ open: false }">
+                <button @click="open = !open" class="text-white focus:outline-none p-2" aria-label="Menu">
+                    <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                
+                <!-- Mobile Dropdown -->
+                <div x-show="open" @click.away="open = false" x-transition.opacity="" class="absolute top-full left-0 w-full bg-charcoal border-b border-gray-structural p-5 flex flex-col gap-4 shadow-cinematic" style="display: none;">
+                    <a @click="open = false" href="#beneficios" class="text-gray-light hover:text-orange-primary font-semibold">Benefícios</a>
+                    <a @click="open = false" href="#depoimentos" class="text-gray-light hover:text-orange-primary font-semibold">Histórias</a>
+                    <a @click="open = false" href="#faq" class="text-gray-light hover:text-orange-primary font-semibold">Dúvidas</a>
+                    <a @click="open = false" href="#matricula" class="mt-2 w-full text-center px-6 py-3 bg-black-deep text-white font-heading font-bold text-sm uppercase rounded shadow-cinematic">Garantir Bolsa Agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scene 1: Hero Aspirational -->
+        <section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-[#FF6B00]">
+            <!-- Wavy Background matching reference -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <svg class="absolute w-full h-full object-cover" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,200 C480,450 960,-50 1440,200 L1440,800 L0,800 Z" fill="#FF8533" opacity="0.8"></path>
+                    <path d="M0,500 C480,250 960,750 1440,500 L1440,800 L0,800 Z" fill="#CC4400" opacity="0.6"></path>
+                </svg>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#FF6B00]/40 to-transparent"></div>
+            </div>
+            
+            <!-- Portal Light Glow Effect -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+            
+            <div class="max-w-[1200px] mx-auto px-5 md:px-10 w-full relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    
+                    <!-- Text Content -->
+                    <div class="flex flex-col items-start text-left">
+                        <div class="inline-flex items-center gap-3 px-4 py-2 bg-black/20 backdrop-blur-sm border border-white/20 rounded-full mb-6 relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                            <span class="text-xs md:text-sm font-heading font-bold text-white tracking-wider uppercase">Vagas Limitadas para 2026</span>
+                        </div>
+                        
+                        <h1 class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-6 text-white">
+                            O FIM DA ESTAGNAÇÃO.<br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70">
+                                O INÍCIO DA SUA LIBERDADE.
+                            </span>
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-white/90 mb-10 max-w-lg leading-relaxed">
+                            A barreira entre o trabalho que sustenta e o estudo que transforma acaba aqui. Conquiste seu diploma reconhecido pelo MEC com <strong class="text-white font-bold">80% OFF Vitalício</strong> estudando 100% online.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                            <a href="#matricula" class="px-8 py-4 bg-black-deep hover:bg-gray-dark text-white font-heading font-bold text-base tracking-wide uppercase rounded shadow-cinematic transform hover:-translate-y-1 transition-all duration-300 text-center flex items-center justify-center gap-2 group">
+                                Quero Minha Bolsa
+                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            <a href="#beneficios" class="px-8 py-4 bg-transparent border border-white/40 hover:border-white text-white font-heading font-bold text-base tracking-wide uppercase rounded transition-all duration-300 text-center">
+                                Ver Detalhes
+                            </a>
+                        </div>
+                        
+                        <div class="mt-8 flex items-center gap-4">
+                            <div class="flex -space-x-3">
+                                <!-- Avatar placeholders -->
+                                <div class="w-10 h-10 rounded-full border-2 border-[#FF6B00] bg-gradient-to-br from-gray-structural to-gray-dark"></div>
+                                <div class="w-10 h-10 rounded-full border-2 border-[#FF6B00] bg-gradient-to-br from-white to-gray-light"></div>
+                                <div class="w-10 h-10 rounded-full border-2 border-[#FF6B00] bg-gradient-to-br from-blue-legacy to-gray-dark"></div>
+                            </div>
+                            <div class="text-sm text-white/80">
+                                <span class="text-white font-bold">+200.000 alunos</span> já transformaram suas vidas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual / Image Placeholder -->
+                    <div class="relative w-full h-full min-h-[400px] lg:min-h-[600px] rounded-2xl overflow-hidden group shadow-cinematic">
+                        <!-- Glass overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-charcoal via-charcoal/80 to-transparent z-10"></div>
+                        
+                        <!-- Abstract "Portal" design as placeholder -->
+                        <div class="absolute inset-0 bg-gray-dark flex items-center justify-center overflow-hidden">
+                            <div class="w-[150%] h-[150%] absolute bg-[conic-gradient(from_90deg_at_50%_50%,#0A0A0A_0%,#1A1A1A_50%,#FF6B00_100%)] animate-[spin_10s_linear_infinite] opacity-30"></div>
+                            <div class="relative z-20 w-4/5 h-4/5 bg-black-deep/80 backdrop-blur-xl rounded-xl border border-gray-structural/50 flex flex-col items-center justify-center p-8 text-center transform group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-20 h-20 text-orange-primary mb-6 animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                                <h3 class="font-heading font-bold text-2xl text-white mb-2">Seu Futuro Oficializado</h3>
+                                <p class="text-gray-medium text-sm">Diploma idêntico ao presencial.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute top-8 right-8 z-30 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg shadow-xl animate-float" style="animation-delay: 1s;">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)]"></div>
+                                <span class="text-sm font-bold text-white">Matrículas Abertas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 2: Trust Bar -->
+        <section class="border-y border-gray-structural bg-charcoal/50 backdrop-blur-sm relative z-20">
+            <div class="max-w-[1200px] mx-auto px-5 md:px-10 py-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-x-0 lg:divide-x divide-gray-structural/50">
+                    <div class="flex flex-col items-center justify-center p-4">
+                        <span class="font-heading font-extrabold text-4xl text-orange-primary mb-1">NOTA 5</span>
+                        <span class="text-xs font-bold text-gray-medium uppercase tracking-widest">Máxima no MEC</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 lg:border-l border-gray-structural/50">
+                        <span class="font-heading font-extrabold text-4xl text-orange-primary mb-1">500K+</span>
+                        <span class="text-xs font-bold text-gray-medium uppercase tracking-widest">Alunos Ativos</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 lg:border-l border-gray-structural/50">
+                        <span class="font-heading font-extrabold text-4xl text-orange-primary mb-1">700+</span>
+                        <span class="text-xs font-bold text-gray-medium uppercase tracking-widest">Polos no Brasil</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 lg:border-l border-gray-structural/50">
+                        <span class="font-heading font-extrabold text-4xl text-orange-primary mb-1">TOP 10</span>
+                        <span class="text-xs font-bold text-gray-medium uppercase tracking-widest">Melhores EADs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 3: Benefits (Tangible) -->
+        <section id="beneficios" class="py-24 relative bg-black-deep bg-noise">
+            <div class="max-w-[1200px] mx-auto px-5 md:px-10 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">A estrutura perfeita para quem não tem tempo a perder</h2>
+                    <p class="text-gray-medium text-lg">Esqueça a rotina engessada. Nossa metodologia foi desenhada para se adaptar à sua vida, não o contrário.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Estude no seu ritmo</h3>
+                        <p class="text-gray-medium text-sm">Aulas gravadas e material didático disponíveis 24/7. Você decide onde, quando e como quer estudar.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Diploma 100% Válido</h3>
+                        <p class="text-gray-medium text-sm">Seu certificado tem exatamente a mesma validade legal e peso no mercado que um curso presencial.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Mensalidade Acessível</h3>
+                        <p class="text-gray-medium text-sm">Com a bolsa de 80% vitalícia, você investe no seu futuro pagando menos que a pizza do final de semana.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Suporte Humanizado</h3>
+                        <p class="text-gray-medium text-sm">Tutores especializados prontos para tirar suas dúvidas. Você estuda online, mas nunca estará sozinho.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden border-t-4 border-t-orange-primary shadow-[0_-5px_20px_rgba(255,107,0,0.1)]">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Plataforma Moderna</h3>
+                        <p class="text-gray-medium text-sm">App intuitivo e leve. Assista às aulas pelo celular, tablet ou computador, mesmo com internet instável.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="group bg-charcoal p-8 rounded-xl border border-gray-structural hover:border-orange-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-cinematic relative overflow-hidden">
+                        <div class="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-orange-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl mb-3 text-white">Polos de Apoio</h3>
+                        <p class="text-gray-medium text-sm">Mais de 1.000 polos físicos pelo Brasil para realização de provas e apoio estrutural quando necessário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 4: Testimonials (Luminous Transition) -->
+        <section id="depoimentos" class="py-24 bg-orange-light text-black-deep relative">
+            <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4 text-black-deep">Eles deram o primeiro passo</h2>
+                    <p class="text-gray-dark text-lg font-medium">Histórias reais de quem transformou a própria realidade através da educação.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl relative mt-8 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-gradient-to-br from-gray-300 to-gray-500 overflow-hidden shadow-lg">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="Foto de aluno" class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-8 text-center">
+                            <div class="flex justify-center text-orange-primary mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="text-gray-dark italic mb-6">"Eu achava que faculdade não era pra mim porque trabalhava o dia todo. A flexibilidade da UniFatecie me permitiu estudar à noite e no ônibus. Hoje sou gerente."</p>
+                            <h4 class="font-heading font-bold text-lg">Carlos Silva</h4>
+                            <span class="text-sm text-gray-medium font-bold">Administração</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl relative mt-8 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-orange-primary">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-gradient-to-br from-gray-300 to-gray-500 overflow-hidden shadow-lg">
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Foto de aluna" class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-8 text-center">
+                            <div class="flex justify-center text-orange-primary mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="text-gray-dark italic mb-6">"O fator decisivo foi a mensalidade. Com o desconto vitalício, finalmente coube no meu orçamento. O suporte dos professores é incrível, mesmo sendo EAD."</p>
+                            <h4 class="font-heading font-bold text-lg">Amanda Costa</h4>
+                            <span class="text-sm text-gray-medium font-bold">Pedagogia</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl relative mt-8 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-gradient-to-br from-gray-300 to-gray-500 overflow-hidden shadow-lg">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Foto de aluno" class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-8 text-center">
+                            <div class="flex justify-center text-orange-primary mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="text-gray-dark italic mb-6">"Meu currículo era invisível para o RH. Seis meses depois de formado em Análise de Sistemas, consegui minha primeira vaga como Dev Junior. Mudou minha vida."</p>
+                            <h4 class="font-heading font-bold text-lg">Rafael Mendes</h4>
+                            <span class="text-sm text-gray-medium font-bold">Análise de Sistemas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 5: Offer & Scarcity (The Peak) -->
+        <section class="py-24 bg-charcoal relative overflow-hidden" x-data="{ 
+            slots: 42,
+            time: 24 * 60 * 60,
+            init() {
+                setInterval(() =&gt; { if(this.slots &gt; 12 &amp;&amp; Math.random() &gt; 0.7) this.slots-- }, 30000);
+                setInterval(() =&gt; { if(this.time &gt; 0) this.time-- }, 1000);
+            },
+            get formattedTime() {
+                let h = Math.floor(this.time / 3600).toString().padStart(2, '0');
+                let m = Math.floor((this.time % 3600) / 60).toString().padStart(2, '0');
+                let s = (this.time % 60).toString().padStart(2, '0');
+                return `${h}:${m}:${s}`;
+            }
+        }">
+            <!-- Background Elements -->
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-orange-primary/10 to-transparent pointer-events-none"></div>
+            
+            <div class="max-w-[1000px] mx-auto px-5 md:px-10 relative z-10">
+                <div class="bg-gradient-to-br from-orange-primary to-[#CC5500] rounded-3xl p-8 md:p-14 text-center text-white shadow-[0_20px_60px_rgba(255,107,0,0.4)] relative overflow-hidden">
+                    <!-- Decorative circles -->
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full border-[20px] border-white/10"></div>
+                    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-48 h-48 rounded-full border-[10px] border-white/10"></div>
+
+                    <div class="relative z-10">
+                        <span class="inline-block px-4 py-1 bg-black-deep/30 rounded-full text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-sm border border-white/20">
+                            Oferta de Libertação
+                        </span>
+                        
+                        <h2 class="font-heading font-extrabold text-5xl md:text-7xl mb-4 drop-shadow-lg">80
+</h2></div></div></div></section></main>
+
+
+
+
+
+</body></html>
